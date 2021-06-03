@@ -11,8 +11,8 @@ module "vpc" { #A
   database_subnets                 = ["10.0.21.0/24", "10.0.22.0/24", "10.0.23.0/24"]
   
   create_database_subnet_group     = true
-  enable_nat_gateway               = false
-  single_nat_gateway               = false
+  enable_nat_gateway               = true
+  single_nat_gateway               = true
 }
 
 module "lb_sg" {
